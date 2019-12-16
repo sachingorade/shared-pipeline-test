@@ -3,10 +3,4 @@
 @Library('steps')
 import Singular
 
-def config = {
-  deployment {
-    frozen = true
-  }
-}
-
-Singular(config)
+Singular(this)
