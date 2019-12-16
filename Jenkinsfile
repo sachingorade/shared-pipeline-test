@@ -3,4 +3,8 @@
 @Library('steps')
 import Singular
 
-Singular(this)
+Singular({
+  deployment {
+    frozen = true
+  }
+})
