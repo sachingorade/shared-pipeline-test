@@ -3,7 +3,7 @@
 @Library('steps')
 import Singular
 
-var config = {
+def config = {
   deployment {
     frozen = true
   }
