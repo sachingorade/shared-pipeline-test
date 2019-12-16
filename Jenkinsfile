@@ -3,4 +3,10 @@
 @Library('steps')
 import Singular
 
-Singular('myproject')
+var config = {
+  deployment {
+    frozen = true
+  }
+}
+
+Singular(config)
