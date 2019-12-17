@@ -3,7 +3,7 @@
 @Library('steps')
 import Singular
 
-boolean additionalFlag = true
+boolean additionalFlag = false
 
 // country specific configuration
 def countryConfig = new CountryConfig(deployAT: true, deployIN: false)
