@@ -3,6 +3,10 @@
 @Library('steps')
 import Singular
 
-def productConfig = new ProductConfig(countryConfig = new CountryConfig(deployAT: true, deployIN: false))
+// country specific configuration
+def countryConfig = new CountryConfig(deployAT: true, deployIN: false)
+
+// overall product specific build config
+def productConfig = new ProductConfig(countryConfig: countryConfig)
 
 Singular(productConfig)
