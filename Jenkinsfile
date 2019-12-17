@@ -3,6 +3,6 @@
 @Library('steps')
 import Singular
 
-def productConfig = new ProductConfig(deploymentFrozen: false, skipTests: true)
+def productConfig = new ProductConfig(countryConfig = new CountryConfig(deployAT: true, deployIN: false))
 
 Singular(productConfig)
