@@ -9,6 +9,6 @@ boolean additionalFlag = false
 def countryConfig = new CountryConfig(deployAT: true, deployIN: false)
 
 // overall product specific build config
-def productConfig = new ProductConfig(countryConfig: countryConfig)
+def productConfig = new ProductConfig(countryConfig: countryConfig, version: "v1")
 
 Singular(productConfig, additionalFlag)
