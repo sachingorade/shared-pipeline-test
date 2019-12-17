@@ -3,8 +3,6 @@
 @Library('steps')
 import Singular
 
-Singular({
-  deployment {
-    frozen = true
-  }
-})
+def productConfig = new ProductConfig(deploymentFrozen: true, skipTests: false)
+
+Singular(productConfig)
